@@ -1,0 +1,38 @@
+{
+  "name": "Express.ReactJS",
+  "version": "1.0.0",
+  "description": "A full-stack starter kit",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd src/client && npm start",
+    "client-build": "cd src/client && npm run build",
+    "client-test": "cd src/client && npm test",
+    "start": "nodemon index.js",
+    "test": "mocha",
+    "i-all": "npm i && cd src/client && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oop/ExpressReactJS.git"
+  },
+  "keywords": [
+    "bot",
+    "auth",
+    "push",
+    "notification"
+  ],
+  "author": "Rufat MAMMADLI",
+  "license": "ISC",
+  "homepage": "https://github.com/oop/ExpressReactJS#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.0.5"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "http-proxy": "^1.16.2",
+    "socket.io": "^2.1.0",
+    "superagent": "^3.8.2"
+  }
+}

@@ -1,5 +1,6 @@
 # Express.ReactJS
 **A full stack** project codebase based on React, Semantic UI, ExpressJS and SocketIO.
+<br /><br />In this starter kit, we have 2 type of server connection examples; **RESTful** and **WebSocket**
 
 **Get started**<br />
 1. To install dependencies: **npm run i-all**<br />

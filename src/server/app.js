@@ -27,7 +27,9 @@ class index {
             next();
         });
 
-        app.use('/', express.static(rootPath + '/src/client/build/'));
+        app.use('/', (req, res) => {
+            res.send('Please start the React app by typing "npm run client" command in your terminal.')
+        });
 
         app.get('/ping', (req, res) => {
             res.json({users: [

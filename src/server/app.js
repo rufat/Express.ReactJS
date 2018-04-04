@@ -27,7 +27,7 @@ class index {
             next();
         });
 
-        app.use('/', (req, res) => {
+        app.get('/', (req, res) => {
             res.send('Please start the React app by typing "npm run client" command in your terminal.')
         });
 

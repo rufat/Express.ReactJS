@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Header from './Header'
-import Main from '../routes'
+import Routes from '../routes'
 
 import 'semantic-ui-css/semantic.min.css';
 
@@ -13,7 +13,7 @@ export default class App extends Component {
         return (
             <div className="App">
                 <Header />
-                <Main />
+                <Routes />
             </div>
         );
     }

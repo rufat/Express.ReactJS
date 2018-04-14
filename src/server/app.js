@@ -27,16 +27,19 @@ class index {
             next();
         });
 
-        app.get('/', (req, res) => {
-            res.send('Please start the React app by typing "npm run client" command in your terminal.')
-        });
+        app.use(express.static(rootPath + '/src/client/build/'));
 
         app.get('/ping', (req, res) => {
+            log('/ping', 'Users requested.');
             res.json({users: [
                 {name: 'rachel', score: 45},
                 {name: 'lindsay', score: 12},
                 {name: 'matthew', score: 96}
             ]});
+        });
+
+        app.get('*', (req, res) => {
+            res.sendFile(rootPath + '/src/client/build/index.html');
         });
 
         layers.server = http.createServer(app);

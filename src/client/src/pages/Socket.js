@@ -5,7 +5,7 @@ import {Menu, Dropdown} from 'semantic-ui-react';
 export default class Socket extends Component {
     constructor() {
         super();
-        this.socket = socketIOClient(":7777/");
+        this.socket = socketIOClient(":5000/");
     }
 
     send = (key, value) => {

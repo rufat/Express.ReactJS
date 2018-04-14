@@ -15,6 +15,7 @@ class Socket {
             });
 
             socket.on('color', (data) => {
+                log('/color', 'Background color changed.');
                 socket.emit('color', data)
             })
         })

@@ -7,8 +7,11 @@
     "client": "cd src/client && npm start",
     "client-build": "cd src/client && npm run build",
     "client-test": "cd src/client && npm test",
-    "start": "nodemon index.js",
+    "start": "concurrently \"node proxy.js\" \"node index.js\"",
+    "start-dev": "concurrently \" cd src/client && npm start \" \"node index.js\"",
+    "start-pro": "cd src/client && npm run build && cd ../../ && concurrently \"node proxy.js\" \"nodemon index.js\"",
     "test": "mocha",
+    "proxy": "node proxy.js",
     "i-all": "npm i && cd src/client && npm i"
   },
   "repository": {

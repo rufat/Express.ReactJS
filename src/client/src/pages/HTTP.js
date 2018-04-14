@@ -11,7 +11,7 @@ export default class HTTP extends Component {
 
     callAPI_btn = async(e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:7777/ping');
+        const response = await fetch('http://localhost:5000/ping');
         const body = await response.json();
 
         if (response.status !== 200) throw Error(body.message);

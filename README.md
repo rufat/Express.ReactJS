@@ -1,7 +1,6 @@
 # Express.ReactJS
 **A full stack** project codebase based on React, Semantic UI, ExpressJS and SocketIO.
-<br /><br />In this starter kit, we have 2 type of server connection examples; **RESTful** and **WebSocket**
-
+<br /><br />In this starter kit, we have 2 type of server connection examples; **RESTful** and **WebSocket**.
 ## Installation
 
     npm install erstack
@@ -12,17 +11,25 @@
 3. To start React app in development: **npm run client**
 
 ### Commands
-- **npm start**: start API server
+- **npm start**: start proxy and API server
+- **npm run start-dev**: start React without bundling and start server
+- **npm start-pro**: bundle React and start server
 - **npm test**: start unit testing for API server
 - **npm run client**: start React app in development
 - **npm run client-build**: bundle React app for production
 - **npm run client-test**: start unit testing for React app
+- **npm run proxy**: start proxy server
 - **npm run i-all**: install all dependencies
+
+### Features
+- Logger - log(title [string], content [string], console.log [boolean])
+- Proxy - for running node without nginx or apache.
+- Delivering static files in Express.
 
 ### Stack modules:
  - ExpressJS
  - SocketIO
- - ReactJS
+ - ReactJS [(Create React App)](https://github.com/facebook/create-react-app)
  - React Router
  - Semantic UI
  

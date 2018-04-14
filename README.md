@@ -10,7 +10,7 @@
 
 ### Get started
 1. To install dependencies: **npm run i-all**<br />
-2. To start API server: **npm start**<br />
+2. To start API server: **npm start-dev**<br />
 3. To start React app in development: **npm run client**
 
 ### Commands

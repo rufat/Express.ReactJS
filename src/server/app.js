@@ -29,7 +29,7 @@ class index {
 
         app.use(express.static(rootPath + '/src/client/build/'));
 
-        app.get('/ping', (req, res) => {
+        app.get('/api/ping', (req, res) => {
             log('/ping', 'Users requested.');
             res.json({users: [
                 {name: 'rachel', score: 45},
@@ -38,8 +38,12 @@ class index {
             ]});
         });
 
-        app.get('*', (req, res) => {
-            res.sendFile(rootPath + '/src/client/build/index.html');
+        app.get('*', (req, res, next) => {
+            if(req.originalUrl.indexOf("/api") === -1){
+                return res.sendFile(rootPath + '/src/client/build/index.html');
+            } else {
+                return next();
+            }
         });
 
         layers.server = http.createServer(app);

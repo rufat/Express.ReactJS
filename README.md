@@ -19,8 +19,8 @@
 - **npm start-pro**: bundle React and start server
 - **npm test**: start unit testing for API server
 - **npm run client**: start React app in development
-- **npm run client-build**: bundle React app for production
-- **npm run client-test**: start unit testing for React app
+- **npm run build:client**: bundle React app for production
+- **npm run test:client**: start unit testing for React app
 - **npm run proxy**: start proxy server
 - **npm run i-all**: install all dependencies
 
